@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#profile {
+    margin-top: 150px;
+    margin-left: 25px;
+    padding: 25px;
+    width: 550px;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 25px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo {
+    border-radius: 50%;
+    height: 250px;
+} 
+
+.web {
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    width: 400px;
+}
+
+.web {
+    color: black ;
+}
+
+.github, .linkedin, .facebook, .instagram {
+    margin: 35px;
+    cursor: pointer;
+}
+
+#info {
+    background-color: #344a72;
+    margin: 35px;
+    width: 120vh;
+    padding: 20px;  
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+#i1{
+    width: 100%; /* Make sure the images fill the grid cells */
+    height: auto;
+}
+
+button{
+    width: 80%;
+    display: block;
+    height: 30px;
+    background-color: #344a72;
+    border-radius: 5px;
+    border: none;
+}
+
+#download-button a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+/* CSS for Skills Section */
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.skill-card {
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    background-color: #3498db; /* Adjust color based on your theme */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.skill-card img {
+    width: 50px; /* Adjust size based on your preference */
+    margin-bottom: 10px;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-name {
+    color: #fff; /* Text color */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#info h3{
+    margin-top: 5px;
+    padding: 20px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #49c1a2;
+}
+
+#info p {
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 10px;
+    line-height: 2.0em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(1, 1, 1);
+    height: 2cm;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="profile">
+            <img src="https://cdn.glitch.global/da86046a-b8d8-4a4d-9b36-8959728de16d/my%20image.jpeg?v=1708427116969" alt="my photo" class="photo">
+            <h1>V Jayadeep Varma</h1>
+            <h3 class="web">Student &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Web Developer</h3>
+            <hr class="name"><br>
+            <a href="https://github.com/jayadeep9153"><img src="https://cdn.glitch.global/da86046a-b8d8-4a4d-9b36-8959728de16d/icons8-github-24.png?v=1708427420124" alt="github" class="github"></a>
+            <a href="https://www.linkedin.com/in/vegesana-jaya-deep-varma-896018249/"><img src="https://cdn.glitch.global/da86046a-b8d8-4a4d-9b36-8959728de16d/icons8-linkedin-24.png?v=1708427426973" alt="linkedin" class="linkedin"></a>
+            <a href="https://www.facebook.com/profile.php?id=100009614105186"><img src="https://cdn.glitch.global/da86046a-b8d8-4a4d-9b36-8959728de16d/icons8-facebook-24.png?v=1708427416151" alt="facebook" class="facebook"></a>
+            <a href="https://www.instagram.com/jayadeep__v/?hl=en"><img src="https://cdn.glitch.global/da86046a-b8d8-4a4d-9b36-8959728de16d/icons8-instagram-24.png?v=1708427423665" alt="instagram" class="instagram"></a>
+            <div id="download-button">
+               <button><a href="https://drive.google.com/uc?export=download&id=1k3LytOBydHOcd643htDX9CkZXETessCo" download="jayadeep resume.pdf">Download Resume</a></button>
+            </div>
+        </div>
+        <!-- This Div is about my personal info -->
+        <div id="info">
+            <div class="aboutme">
+                <h3 class="about-me">About Me</h3>
+                <p class="para">I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations.
+                    I am able to work well both in a team environment as well as using own initiative.
+                    I am able to work well under pressure and adhere to strict deadlines.
+                    I am dedicated to your firm. 
+                    I have good interpersonal skills.
+                    I am reliable and dependable and often seek new responsibilities within a wide range of employment areas.
+                    I am determined and decisive.
+                </p>  
+            </div><hr>
+            <div class="career-objective">
+                <h3 class="career-objective">Career Objective</h3>
+                <p class="para2">To obtain a challenging career in the IT industry and put all my efforts into the growth of the organization and have a great working environment.</p>  
+            </div><hr>
+            <!-- Skills Section -->
+            <div id="skills">
+                <h3><strong>Skills</strong></h3><br>
+                <div class="skill-card">
+                    <img width="64" height="64" src="https://img.icons8.com/external-ddara-lineal-ddara/64/external-front-end-digital-marketing-ddara-lineal-ddara.png" alt="external-front-end-digital-marketing-ddara-lineal-ddara"/>
+                    <div class="skill-name">Frontend Development</div>
+                </div>
+                <div class="skill-card">
+                    <img width="61" height="61" src="https://img.icons8.com/ios-glyphs/61/react.png" alt="react"/>
+                    <div class="skill-name">React</div>
+                </div>
+                <div class="skill-card">
+                    <img width="64" height="64" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/64/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+                <div class="skill-card">
+                    <img width="64" height="64" src="https://img.icons8.com/ios/64/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+                    <div class="skill-name">Java Programming</div>
+                </div>
+                <div class="skill-card">
+                    <img width="64" height="64" src="https://img.icons8.com/ios-filled/64/python.png" alt="python"/>
+                    <div class="skill-name">Python</div>
+                </div>
+            </div><hr>
+            <div class="projects">
+                <h3>My Project</h3>
+                <div class="photos">
+                    <img id="i1" src="https://cdn.glitch.global/fd163eab-950d-4b66-849f-fcdcdbba4394/Screenshot%20(38).png?v=1708078450182">
+                    <img id="i1" src="https://cdn.glitch.global/fd163eab-950d-4b66-849f-fcdcdbba4394/Screenshot%20(37).png?v=1708078455365">
+                    <img id="i1" src="https://cdn.glitch.global/fd163eab-950d-4b66-849f-fcdcdbba4394/Screenshot%20(36).png?v=1708078461275">
+                    <img id="i1" src="https://cdn.glitch.global/fd163eab-950d-4b66-849f-fcdcdbba4394/Screenshot%20(35).png?v=1708078462902">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
